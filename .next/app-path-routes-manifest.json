@@ -1,9 +1,0 @@
-{
-  "/_not-found/page": "/_not-found",
-  "/login/page": "/login",
-  "/dashboard/page": "/dashboard",
-  "/page": "/",
-  "/estoques/page": "/estoques",
-  "/materiais/novo/page": "/materiais/novo",
-  "/materiais/page": "/materiais"
-}
