@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function DashboardPage() {
   return (
     <main
@@ -15,6 +17,7 @@ export default function DashboardPage() {
           alignItems: "center",
           gap: "20px",
           marginBottom: "32px",
+          flexWrap: "wrap",
         }}
       >
         <div>
@@ -88,12 +91,12 @@ export default function DashboardPage() {
             gap: "14px",
           }}
         >
-          <Botao nome="Materiais" />
-          <Botao nome="Estoques" />
-          <Botao nome="Entrada" />
-          <Botao nome="Saída" />
-          <Botao nome="Transferência" />
-          <Botao nome="Inventário" />
+          <Botao nome="Materiais" href="/materiais" />
+          <Botao nome="Estoques" href="/estoques" />
+          <Botao nome="Entrada" href="#" />
+          <Botao nome="Saída" href="#" />
+          <Botao nome="Transferência" href="#" />
+          <Botao nome="Inventário" href="#" />
         </div>
       </section>
     </main>
@@ -137,10 +140,16 @@ function Card({
   );
 }
 
-function Botao({ nome }: { nome: string }) {
+function Botao({
+  nome,
+  href,
+}: {
+  nome: string;
+  href: string;
+}) {
   return (
-    <button
-      type="button"
+    <Link
+      href={href}
       style={{
         minHeight: "72px",
         padding: "16px",
@@ -150,9 +159,13 @@ function Botao({ nome }: { nome: string }) {
         color: "#0b5ed7",
         fontSize: "16px",
         fontWeight: "bold",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        textDecoration: "none",
       }}
     >
       {nome}
-    </button>
+    </Link>
   );
 }
