@@ -58,7 +58,7 @@ export default function DashboardPage() {
         }}
       >
         <Card titulo="Total de materiais" valor="0" />
-        <Card titulo="Locais de estoque" valor="28" />
+        <Card titulo="Locais de estoque" valor="33" />
         <Card titulo="Entradas hoje" valor="0" />
         <Card titulo="Saídas hoje" valor="0" />
         <Card titulo="Estoque baixo" valor="0" />
