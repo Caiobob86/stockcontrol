@@ -93,8 +93,8 @@ export default function DashboardPage() {
         >
           <Botao nome="Materiais" href="/materiais" />
           <Botao nome="Estoques" href="/estoques" />
-          <Botao nome="Entrada" href="#" />
-          <Botao nome="Saída" href="#" />
+          <Botao nome="Entrada" href="/entrada" />
+          <Botao nome="Saída" href="/saida" />
           <Botao nome="Transferência" href="#" />
           <Botao nome="Inventário" href="#" />
         </div>
